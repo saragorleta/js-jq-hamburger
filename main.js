@@ -1,9 +1,10 @@
 $(document).ready(function(){
-
+  //quando clicca su hamburger menu
+  $('.header-right').click(function(){
+    $('header-right>a i ').show();
+  });
+  //quando clicca sulla x
   $('.hamburger-menu').click(function(){
-    $('ul li .hamburger-menu').show();
+    $('.close').hide();
   });
-  $('.close').click(function(){
-    $('a').hide();
-  });
-}
+});
